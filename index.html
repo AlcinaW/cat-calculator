@@ -7,41 +7,44 @@
 	<!--normalize.css -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 	<!-- Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
 
-	<div class="cat">
-		<div class="calculator">
-			<div class="clear">C</div>
-			<!-- <span class="clear"></span -->
-			<div class="screen">
-			</div>
 
-			<div class="buttons">
-				<span>7</span>
-				<span>8</span>
-				<span>9</span>
-				<span class="operator" id="plus">+</span>
-				<span>4</span>
-				<span>5</span>
-				<span>6</span>
-				<span class="operator" id="minus">-</span>
-				<span>1</span>
-				<span>2</span>
-				<span>3</span>
-				<span class="operator" id="divide">&divide;</span>
-				<span>0</span>
-				<span>.</span>
-				<span class="eval" id="equals">=</span>
-				<span class="operator" id="times">&times;</span>
-			</div>
+		<div id="calculator">
+			<form>
+				<input type="text" id="display"><br>
+				<input type="button" value="C" id="keys" onclick="addtoscreen('c')">
+				<input type="button" value="<--" id="keys" onclick="backspace()">
+				<input type="button" value="X^3" id="keys" onclick="power(3)">
 
+				<input type="button" value="+" id="keys" onclick="addtoscreen('+')"><br>
+
+				<input type="button" value="9" id="keys" onclick="addtoscreen('9')">
+				<input type="button" value="8" id="keys" onclick="addtoscreen('8')">
+				<input type="button" value="7" id="keys" onclick="addtoscreen('7')">
+
+				<input type="button" value="-" id="keys" onclick="addtoscreen('-')"><br>
+
+				<input type="button" value="6" id="keys" onclick="addtoscreen('6')">
+				<input type="button" value="5" id="keys" onclick="addtoscreen('5')">
+				<input type="button" value="4" id="keys" onclick="addtoscreen('4')">
+
+				<input type="button" value="*" id="keys" onclick="addtoscreen('*')"><br>
+
+				<input type="button" value="3" id="keys" onclick="addtoscreen('3')">
+				<input type="button" value="2" id="keys" onclick="addtoscreen('2')">
+				<input type="button" value="1" id="keys" onclick="addtoscreen('1')">
+
+				<input type="button" value="/" id="keys" onclick="addtoscreen('/')"><br>
+
+				<input type="button" value="0" id="keys" onclick="addtoscreen('0')">
+				<input type="button" value="." id="keys" onclick="addtoscreen('.')">
+				<input type="button" value="=" id="equal" onclick="answer()">
+
+			</form>
 		</div>
-	</div>
 
-
-
-<script src="app.js" type="text/javascript"></script>
 </body>
 </html>
