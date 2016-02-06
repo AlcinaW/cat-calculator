@@ -1,6 +1,6 @@
 # Cat Calculator
 
-A cat-shaped calculator built HTML form inputs, vanilla JavaScript, and CSS pixel art.
+A cat-shaped calculator with built HTML form inputs, vanilla JavaScript, and CSS pixel art.
 
 The pixel cat and speech bubble were generated with [Pixelator](https://elrumordelaluz.github.io/Pixelator).
 
