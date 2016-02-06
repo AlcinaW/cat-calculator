@@ -81,6 +81,6 @@
 	border-radius: 25px;
 }
 
-#keys:hover, #equal:hover, #clear:hover {
+#keys:hover, #equal:hover, #clear:hover, #ce:hover {
 	background-color: #b1f4fc;
 }
