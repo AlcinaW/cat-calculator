@@ -1,6 +1,6 @@
 var meow = document.getElementById('screen');
 
-// Puts text to screen, if "C", clears screen and values
+// Puts text to screen; if "ac", clears screen and values
 function addToScreen(x) {
 	meow.value += x;
 	if (x === "ac") {
